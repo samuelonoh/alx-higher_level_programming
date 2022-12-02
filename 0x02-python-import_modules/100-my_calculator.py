@@ -1,21 +1,23 @@
 #!/usr/bin/python3
-import sys
-
+from sys import argv
+from calculator_1 import add, sub, mul, div
 if __name__ != "__main__":
     exit()
 
-argumentStr = "{:d} argument"
-argc = len(sys.argv) - 1
-if argc == 0:
-    argumentStr += 's.'
-elif argc == 1:
-    argumentStr += ':'
+argc = len(argv) - 1
+if argc != 3:
+    print("Usage: {:s} <a> <operator> <b>".format(argv[0]))
+    exit(1)
+elif argv[2] == '+':
+    result = add(int(argv[1]), int(argv[3]))
+elif argv[2] == '-':
+    result = sub(int(argv[1]), int(argv[3]))
+elif argv[2] == '*':
+    result = mul(int(argv[1]), int(argv[3]))
+elif argv[2] == '/':
+    result = div(int(argv[1]), int(argv[3]))
 else:
-    argumentStr += 's:'
-print(argumentStr.format(argc))
+    print("Unknown operator. Available operators: +, -, * and /")
+    exit(1)
 
-i = 0
-for argument in sys.argv:
-    if i != 0:
-        print("{:d}: {:s}".format(i, argument))
-    i += 1 
+print("{:s} {:s} {:s} = {:d}".format(argv[1], argv[2], argv[3], result))
