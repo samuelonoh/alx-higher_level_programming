@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "ritwickdey.liveserver",
+        "wix.vscode-import-cost",
+        "yzhang.markdown-all-in-one",
+        "aaron-bond.better-comments",
+        "bracketpaircolordlw.bracket-pair-color-dlw"
+    ]
+}
