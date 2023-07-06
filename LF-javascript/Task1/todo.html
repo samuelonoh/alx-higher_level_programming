@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <button id="menu" onmouseover="enter()" onmouseleave="out()" onclick="opened()">
+            |||
+        </button>
+        <div class="btnDiv">
+            <button id="undo">Undo</button>
+            <button id="clear">Clear</button>
+            <button id="logout">Log out </button>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="cancelDiv">
+            <button id="cancel" onclick="cancelled()">X</button>
+        </div>
+        <nav>
+            <h3>Link 1</h3>
+            <h3>Link 2</h3>
+            <h3>Link 3</h3>
+        </nav>
+    </div>
+    <div id="body">
+        <form>
+            <input type="text" id="input" />
+            <button onclick="click" id="button">Submit</button>
+        </form>
+
+        <div id="todo"></div>
+
+
+    </div>
+    <div class="flex">
+        <div class=" danger">
+            <div class="dropdown-content">
+                <p>Delete account</p>
+            </div>
+            <button><i class="bi bi-exclamation-circle" style="color: red;"></i></button>
+        </div>
+    </div>
+
+
+    <script src="dom.js"></script>
+</body>
+
+</html>
