@@ -17,7 +17,7 @@
         <div class="btnDiv">
             <button id="undo">Undo</button>
             <button id="clear">Clear</button>
-            <button id="logout">Log out </button>
+            <button id="logout" onclick="logout()">Log out </button>
         </div>
     </div>
 
@@ -39,12 +39,21 @@
 
         <div id="todo"></div>
 
+        <div class="modal">
+            <div class="delModal">
+                <h3>Are you you want to delete this account?</h3>
+                <div class="optionDiv">
+                    <button class="option" onclick="deleteUser()">Yes</button>
+                    <button class="option" onclick="removeModal()">No</button>
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="flex">
         <div class=" danger">
-            <div class="dropdown-content">
-                <p>Delete account</p>
+            <div class="dropdown-content" onclick="displayModal()">
+                <p style="color:red">Delete account</p>
             </div>
             <button><i class="bi bi-exclamation-circle" style="color: red;"></i></button>
         </div>

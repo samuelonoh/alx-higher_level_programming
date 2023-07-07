@@ -8,6 +8,24 @@ let clear = document.getElementById("clear");
 let menu = document.getElementById("menu");
 let sidebar = document.getElementById("sidebar");
 let cancel = document.getElementById("cancel");
+let modal = document.querySelector(".modal");
+
+function displayModal() {
+    modal.style.display = "flex";
+}
+function removeModal() {
+    modal.style.display = "none";
+}
+const deleteUser = () => {
+    localStorage.clear;
+    setTimeout(() => 5000)
+    window.location.replace("./index.html")
+}
+function logout() {
+    setTimeout(() => {
+        window.location.replace("./login.html")
+    }, 3000);
+}
 
 
 window.addEventListener("scroll", function () {
@@ -18,7 +36,7 @@ window.addEventListener("scroll", function () {
     } else {
         nav.classList.remove("fixed")
     }
-})
+});
 
 function enter() {
     menu.innerText = "☰";

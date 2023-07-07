@@ -65,7 +65,7 @@ button.addEventListener("click", function (e) {
             exists.style.display = "block";
             setTimeout(() => {
                 exists.style.display = "none"
-                window.location.replace("http://192.168.43.38:5500/LF-javascript/test1/login.html")
+                window.location.replace("./login.html")
             }, 5000);
         } else {
             localStorage.setItem("name", name.value);
@@ -77,7 +77,7 @@ button.addEventListener("click", function (e) {
                     localStorage.setItem("gender", gen.value)
                 }
             }
-            window.location.replace("http://192.168.43.38:5500/LF-javascript/test1/todo.html");
+            window.location.replace("./todo.html");
         }
     }
 });

@@ -5,28 +5,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <main>
         <div class="formDiv">
             <form>
-                <h3 style="text-align: center">SIGN IN</h3>
+                <h3 style="text-align: center">LOGIN</h3>
                 <div>
                     <label>Email:</label><br />
                     <input class="input" type="email" id="email" />
+                    <p id="invalidEmail" style="display: none; color: red;">Enter a valid email!</p>
+                    <p id="incorrectEmail" style="display: none; color: red;">email is incorrect</p>
+
                 </div>
+
+
                 <p style="color: red; display: none;  " id="error">Email and password is not correct</p>
-                
+
                 <div>
                     <label>Password:</label><br />
                     <input class="input" type="password" id="password" />
+                    <p id="incorrectPassword" style="display: none; color: red;">Incorrect password</p>
                 </div>
+
                 <button id="button" onclick="click">Sign in</button>
-                <p style="text-align: right">
+                <div style="display: flex; justify-content: space-between;">
+                    <a href="confirm.html">forgotten password</a>
+                <p>
                     Don't have an account <a href="index.html">Signup</a>
                 </p>
+                </div>
             </form>
         </div>
     </main>

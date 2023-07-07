@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>confirm-password</title>
+    <link rel="stylesheet" href="confirm.css" />
+</head>
+
+<body>
+    <main>
+        <div class="formDiv">
+            <form>
+                <h3 style="text-align: center">CONFIRM PASSWORD</h3>
+                <div>
+                    <label>Email:</label><br />
+                    <input class="input" type="email" id="email" />
+                    <p id="invalidEmail" style="display: none; color: red;">Enter a valid email!</p>
+                    <p id="incorrectEmail" style="display: none; color: red;">email is incorrect</p>
+
+                </div>
+
+                <div>
+                    <label>New Password:</label><br />
+                    <input class="input" type="password" id="password1" />
+                    <p style="color: red; display: none;" id="required">password is required</p>
+                </div>
+                <div>
+                    <label>Confirm Password:</label><br />
+                    <input class="input" type="password" id="password2" />
+                    <p id="incorrectPassword" style="display: none; color: red;"></p>
+                </div>
+                <button id="button" onclick="click">Confirm Account</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="confirm.js"></script>
+</body>
+
+</html>
