@@ -74,7 +74,7 @@ button.addEventListener("click", function(e) {
             password1.style.border = "2px solid green";
             password2.style.border = "2px solid green";
         setTimeout(() => {
-            window.location.replace("http://192.168.43.38:5500/LF-javascript/Todo/todo.html")
+            window.location.replace("./todo.html")
         }, 3000);
         }
     }

@@ -1,0 +1,7 @@
+.footer {
+    height: 40vh;
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+    color: rgb(0, 208, 255);;
+}
